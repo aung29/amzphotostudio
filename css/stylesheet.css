@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 0;
+}
+
+/* Start Header */
+header{
+    height: 100vh;
+    background-image:linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    ),url(../assets/img/etc/cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Start Navbar */
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.5));
+    padding: 20px 30px;
+    
+}
+
+.navmenus{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7));
+    padding: 5px 30px;
+}
+
+.menuitems{
+    color: #eee;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color 0.5s ease;
+}
+
+.menuitems:hover{
+    color: #1a99a8;
+}
+
+.lines1,.lines2,.lines3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.4s;
+}
+
+.changes .lines1{
+    
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.changes .lines2{
+    opacity: 0;
+}
+.changes .lines3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* End Navbar */
+
+
+/* Start Banner */
+
+.banners{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bannerheaders{
+    animation-name: bnani;
+    animation-duration: 2s;
+}
+
+.bannerparagraphs{
+    animation-name: bnani;
+    animation-duration: 2s;
+    animation-delay:0.5s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes bnani{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+/* End Banner */
+
+/* End Header */
+
+
+/* Start Mission Section */
+.missions{
+    background: #031c2b;
+
+}
+
+.underlines{
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}
+/* End Mission Section */
